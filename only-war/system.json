@@ -1,0 +1,399 @@
+{
+  "id": "only-war",
+  "title": "Only War",
+  "description": "Unofficial game system for Only War (Fantasy Flight Games, Warhammer 40,000 Roleplay). Personal use.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "dominique-carvalho",
+      "url": "https://github.com/dominique-carvalho"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "systems/only-war/assets/cover.jpg"
+    }
+  ],
+  "background": "systems/only-war/assets/cover.jpg",
+  "esmodules": [
+    "only-war.mjs"
+  ],
+  "styles": [
+    "styles/tokens.css",
+    "styles/components.css",
+    "styles/sheets.css",
+    "styles/items.css",
+    "styles/dialogs.css",
+    "styles/chat.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "guardsman": {},
+      "comrade": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "squad": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "notes"
+        ]
+      }
+    },
+    "Item": {
+      "talent": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "regimentOption": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "regiment": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "speciality": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armour": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "forceField": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "injury": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "psychicPower": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "disorder": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ammunition": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weaponUpgrade": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "vehicleUpgrade": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "cybernetic": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "order": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "talents",
+      "label": "Talents (Core)",
+      "path": "packs/talents",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "orders",
+      "label": "Orders (HotE)",
+      "path": "packs/orders",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "regiment-options",
+      "label": "Regiment Options (Core)",
+      "path": "packs/regiment-options",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "regiments",
+      "label": "Regiments (Core)",
+      "path": "packs/regiments",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "specialities",
+      "label": "Specialities (Core)",
+      "path": "packs/specialities",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "traits",
+      "label": "Traits (Core)",
+      "path": "packs/traits",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons (Core)",
+      "path": "packs/weapons",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "armour",
+      "label": "Armour (Core)",
+      "path": "packs/armour",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "injuries",
+      "label": "Injuries (Core)",
+      "path": "packs/injuries",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gear",
+      "label": "Gear (Core)",
+      "path": "packs/gear",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "psychic-powers",
+      "label": "Psychic Powers (Core)",
+      "path": "packs/psychic-powers",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary (Core)",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicles",
+      "label": "Vehicles (Core)",
+      "path": "packs/vehicles",
+      "type": "Actor",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "pregenerated-characters",
+      "label": "Pre-generated Characters",
+      "path": "packs/pregenerated-characters",
+      "type": "Actor",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ammunition",
+      "label": "Ammunition (Core)",
+      "path": "packs/ammunition",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicle-upgrades",
+      "label": "Vehicle Upgrades",
+      "path": "packs/vehicle-upgrades",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapon-upgrades",
+      "label": "Weapon Upgrades (Core)",
+      "path": "packs/weapon-upgrades",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "cybernetics",
+      "label": "Cybernetics (Core)",
+      "path": "packs/cybernetics",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "disorders",
+      "label": "Mental Disorders (Core)",
+      "path": "packs/disorders",
+      "type": "Item",
+      "system": "only-war",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "wounds",
+  "socket": true,
+  "packFolders": [
+    {
+      "name": "Only War",
+      "sorting": "m",
+      "color": "#3f4a22",
+      "packs": [
+        "regiments",
+        "specialities",
+        "regiment-options",
+        "talents",
+        "traits",
+        "weapons",
+        "armour",
+        "injuries",
+        "gear",
+        "psychic-powers",
+        "bestiary",
+        "vehicles",
+        "pregenerated-characters",
+        "ammunition",
+        "weapon-upgrades",
+        "vehicle-upgrades",
+        "cybernetics",
+        "disorders"
+      ]
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/dominique-carvalho/foundry-releases/main/only-war/system.json",
+  "download": "https://github.com/dominique-carvalho/foundry-releases/releases/download/only-war-v0.1.0/only-war.zip"
+}
