@@ -1,0 +1,512 @@
+{
+  "id": "rogue-trader",
+  "title": "Rogue Trader",
+  "description": "Unofficial game system for Rogue Trader (Fantasy Flight Games core rulebook, 1.4 errata).",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "dominique-carvalho",
+      "url": "https://github.com/dominique-carvalho"
+    }
+  ],
+  "background": "systems/rogue-trader/assets/cover.jpg",
+  "media": [
+    {
+      "type": "cover",
+      "url": "systems/rogue-trader/assets/cover.jpg"
+    }
+  ],
+  "esmodules": [
+    "rogue-trader.mjs"
+  ],
+  "styles": [
+    "styles/tokens.css",
+    "styles/rogue-trader.css",
+    "styles/components.css",
+    "styles/explorer.css",
+    "styles/npc.css",
+    "styles/starship.css",
+    "styles/vehicle.css",
+    "styles/items.css",
+    "styles/chat.css",
+    "styles/windows.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "explorer": {},
+      "npc": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "starship": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "ordnance": {},
+      "militaryUnit": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "colony": {
+        "htmlFields": [
+          "notes"
+        ]
+      }
+    },
+    "Item": {
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armour": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "cybernetic": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "origin": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "career": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "talent": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "psychicTechnique": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "navigatorPower": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "navigatorMutation": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "shipHull": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "shipComponent": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "shipComplication": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "endeavour": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "disorder": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "malignancy": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "elitePackage": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "forceField": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "shipUpgrade": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "bestiary",
+      "label": "Bestiary (Core Ch. XIV)",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "traits",
+      "label": "Creature Traits",
+      "path": "packs/traits",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Rule Tables",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "imperium",
+      "label": "The Imperium (Core Ch. XI)",
+      "path": "packs/imperium",
+      "type": "JournalEntry",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rogue-traders",
+      "label": "Rogue Traders (Core Ch. XII)",
+      "path": "packs/rogue-traders",
+      "type": "JournalEntry",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "koronus-expanse",
+      "label": "The Koronus Expanse (Core Ch. XIII)",
+      "path": "packs/koronus-expanse",
+      "type": "JournalEntry",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapons",
+      "label": "Armoury: Weapons (Core Ch. V)",
+      "path": "packs/weapons",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "armour",
+      "label": "Armoury: Armour (Core Ch. V)",
+      "path": "packs/armour",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gear",
+      "label": "Armoury: Gear, Drugs and Tools (Core Ch. V)",
+      "path": "packs/gear",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "cybernetics",
+      "label": "Armoury: Cybernetics (Core Ch. V)",
+      "path": "packs/cybernetics",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "origins",
+      "label": "Origin Path (Core Ch. I)",
+      "path": "packs/origins",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "careers",
+      "label": "Careers (Core Ch. II)",
+      "path": "packs/careers",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "talents",
+      "label": "Talents",
+      "path": "packs/talents",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "psychic-techniques",
+      "label": "Psychic Techniques (Core Ch. VI)",
+      "path": "packs/psychic-techniques",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "navigator-powers",
+      "label": "Navigator Powers and Mutations (Core Ch. VII)",
+      "path": "packs/navigator-powers",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "starship-hulls",
+      "label": "Starship Hulls (Core Ch. VIII)",
+      "path": "packs/starship-hulls",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "starship-components",
+      "label": "Starship Components and Complications (Core Ch. VIII)",
+      "path": "packs/starship-components",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "starships",
+      "label": "Starships (Core Ch. VIII)",
+      "path": "packs/starships",
+      "type": "Actor",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "military-units",
+      "label": "Military Units (BFK Ch. IV)",
+      "path": "packs/military-units",
+      "type": "Actor",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicles",
+      "label": "Vehicles (ItS Ch. V)",
+      "path": "packs/vehicles",
+      "type": "Actor",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "endeavours",
+      "label": "Endeavours (Core Ch. IX)",
+      "path": "packs/endeavours",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "disorders",
+      "label": "Mental Disorders (Core Ch. X)",
+      "path": "packs/disorders",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "malignancies",
+      "label": "Malignancies (Core Ch. X)",
+      "path": "packs/malignancies",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "elite-advances",
+      "label": "Elite Advances (ItS Ch. II)",
+      "path": "packs/elite-advances",
+      "type": "Item",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adventures",
+      "label": "Published Adventures",
+      "path": "packs/adventures",
+      "type": "JournalEntry",
+      "system": "rogue-trader",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "wounds",
+  "socket": true,
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "fonts",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "packFolders": [
+    {
+      "name": "Rogue Trader",
+      "sorting": "m",
+      "color": "#5c1a1a",
+      "packs": [
+        "origins",
+        "careers",
+        "elite-advances",
+        "talents",
+        "psychic-techniques",
+        "navigator-powers",
+        "starship-hulls",
+        "starship-components",
+        "starships",
+        "vehicles",
+        "military-units",
+        "endeavours",
+        "disorders",
+        "malignancies",
+        "weapons",
+        "armour",
+        "gear",
+        "cybernetics",
+        "bestiary",
+        "traits",
+        "tables",
+        "imperium",
+        "rogue-traders",
+        "koronus-expanse",
+        "adventures"
+      ]
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/dominique-carvalho/foundry-releases/main/rogue-trader/system.json",
+  "download": "https://github.com/dominique-carvalho/foundry-releases/releases/download/rogue-trader-v0.1.0/rogue-trader.zip"
+}
