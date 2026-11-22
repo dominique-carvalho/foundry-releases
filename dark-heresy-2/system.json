@@ -1,0 +1,518 @@
+{
+  "id": "dark-heresy-2",
+  "title": "Dark Heresy 2nd Edition",
+  "description": "Unofficial game system for Dark Heresy 2nd Edition (Fantasy Flight Games). Personal use.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "dominique-carvalho",
+      "url": "https://github.com/dominique-carvalho"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "systems/dark-heresy-2/assets/cover.jpg"
+    }
+  ],
+  "background": "systems/dark-heresy-2/assets/cover.jpg",
+  "esmodules": [
+    "dark-heresy-2.mjs"
+  ],
+  "styles": [
+    "styles/tokens.css",
+    "styles/dark-heresy-2.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "acolyte": {},
+      "warband": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "specialAbilities",
+          "description"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    },
+    "Item": {
+      "talent": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "homeWorld": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "background": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "role": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "eliteAdvance": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ammunition": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weaponUpgrade": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armour": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "forceField": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "cybernetic": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "criticalInjury": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "psychicPower": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "affliction": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "home-worlds",
+      "label": "Home Worlds",
+      "system": "dark-heresy-2",
+      "path": "packs/home-worlds",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "backgrounds",
+      "label": "Backgrounds",
+      "system": "dark-heresy-2",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "roles",
+      "label": "Roles",
+      "system": "dark-heresy-2",
+      "path": "packs/roles",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "elite-advances",
+      "label": "Elite Advances",
+      "system": "dark-heresy-2",
+      "path": "packs/elite-advances",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "creation-tables",
+      "label": "Creation Tables",
+      "system": "dark-heresy-2",
+      "path": "packs/creation-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "critical-effects",
+      "label": "Critical Effects",
+      "system": "dark-heresy-2",
+      "path": "packs/critical-effects",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "psychic-powers",
+      "label": "Psychic Powers",
+      "system": "dark-heresy-2",
+      "path": "packs/psychic-powers",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "psychic-tables",
+      "label": "Psychic Tables",
+      "system": "dark-heresy-2",
+      "path": "packs/psychic-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mind-tables",
+      "label": "Fear, Insanity and Corruption",
+      "system": "dark-heresy-2",
+      "path": "packs/mind-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "narrative-reference",
+      "label": "Narrative Tools",
+      "system": "dark-heresy-2",
+      "path": "packs/narrative-reference",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rules-reference",
+      "label": "Rules Reference",
+      "system": "dark-heresy-2",
+      "path": "packs/rules-reference",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adventures",
+      "label": "Adventures",
+      "system": "dark-heresy-2",
+      "path": "packs/adventures",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicle-tables",
+      "label": "Vehicle Tables",
+      "system": "dark-heresy-2",
+      "path": "packs/vehicle-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ordo-tables",
+      "label": "Ordo Tables",
+      "system": "dark-heresy-2",
+      "path": "packs/ordo-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ordo-reference",
+      "label": "Ordo Reference",
+      "system": "dark-heresy-2",
+      "path": "packs/ordo-reference",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "talents",
+      "label": "Talents",
+      "system": "dark-heresy-2",
+      "path": "packs/talents",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "traits",
+      "label": "Traits",
+      "system": "dark-heresy-2",
+      "path": "packs/traits",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "dark-heresy-2",
+      "path": "packs/weapons",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ammunition",
+      "label": "Ammunition",
+      "system": "dark-heresy-2",
+      "path": "packs/ammunition",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapon-upgrades",
+      "label": "Weapon Modifications",
+      "system": "dark-heresy-2",
+      "path": "packs/weapon-upgrades",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "armour",
+      "label": "Armour and Force Fields",
+      "system": "dark-heresy-2",
+      "path": "packs/armour",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gear",
+      "label": "Gear",
+      "system": "dark-heresy-2",
+      "path": "packs/gear",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "cybernetics",
+      "label": "Cybernetics",
+      "system": "dark-heresy-2",
+      "path": "packs/cybernetics",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "personalisation-tables",
+      "label": "Personalisation Tables",
+      "system": "dark-heresy-2",
+      "path": "packs/personalisation-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary",
+      "system": "dark-heresy-2",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicles",
+      "label": "Vehicles",
+      "system": "dark-heresy-2",
+      "path": "packs/vehicles",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "wounds",
+  "socket": true,
+  "packFolders": [
+    {
+      "name": "Character Creation",
+      "sorting": "m",
+      "color": "#5a1a1a",
+      "packs": [
+        "home-worlds",
+        "backgrounds",
+        "roles",
+        "elite-advances",
+        "creation-tables",
+        "personalisation-tables"
+      ]
+    },
+    {
+      "name": "Progression",
+      "sorting": "m",
+      "color": "#1a3a2a",
+      "packs": [
+        "talents",
+        "traits"
+      ]
+    },
+    {
+      "name": "Armoury",
+      "sorting": "m",
+      "color": "#3a3a1a",
+      "packs": [
+        "weapons",
+        "ammunition",
+        "weapon-upgrades",
+        "armour",
+        "gear",
+        "cybernetics"
+      ]
+    },
+    {
+      "name": "Rules",
+      "sorting": "m",
+      "color": "#3a2a1a",
+      "packs": [
+        "rules-reference",
+        "adventures",
+        "critical-effects",
+        "mind-tables",
+        "narrative-reference",
+        "vehicle-tables"
+      ]
+    },
+    {
+      "name": "Psychic",
+      "sorting": "m",
+      "color": "#2a1a4a",
+      "packs": [
+        "psychic-powers",
+        "psychic-tables"
+      ]
+    },
+    {
+      "name": "Ordos",
+      "sorting": "m",
+      "color": "#1a2a3a",
+      "packs": [
+        "ordo-tables",
+        "ordo-reference"
+      ]
+    },
+    {
+      "name": "Bestiary",
+      "sorting": "m",
+      "color": "#3a1a1a",
+      "packs": [
+        "bestiary",
+        "vehicles"
+      ]
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/dominique-carvalho/foundry-releases/main/dark-heresy-2/system.json",
+  "download": "https://github.com/dominique-carvalho/foundry-releases/releases/download/dark-heresy-2-v0.1.0/dark-heresy-2.zip"
+}
